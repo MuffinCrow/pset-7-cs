@@ -1,6 +1,6 @@
 public class ProblemSet7 {
     public static void main(String[] args) {
-
+        System.out.print(surroundMe(null, null));
     }
     /*
      * Exercise 1.
@@ -8,10 +8,9 @@ public class ProblemSet7 {
      * Given two strings, return a new string built by surrounding in with the first
      * and last two characters of out.
      */
-    public String surroundMe(String in, String out) {
+    public static String surroundMe(String in, String out) {
         //in = escapeBuild(in);
         //out = escapeBuild(out);
-        System.out.println(out.length());
         if (in == null) {
             return null;
         } else if (out == null || out.length() != 4) {
